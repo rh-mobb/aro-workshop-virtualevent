@@ -37,7 +37,7 @@ bash ./cloudshell-setup.sh
 
 source .workshoprc
 ```
-
+aa
 
 ### ARO credentials 
 Credentials will be provided to you by the organizing staff on the day of the event.
