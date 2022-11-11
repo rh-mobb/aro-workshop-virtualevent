@@ -15,3 +15,5 @@ We will be using the following terms throughout the workshop labs so here are so
 * Route - a labeled and DNS mapped network path to a service from outside OpenShift
 * Master - The foreman of the OpenShift architecture, the master schedules operations, watches for problems, and orchestrates everything
 * Node - Where the compute happens, your software is run on nodes
+
+test
