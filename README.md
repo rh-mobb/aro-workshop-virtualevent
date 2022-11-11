@@ -27,19 +27,20 @@ Some of the things you’ll be going through:
 - Introduction to operators
 
 ### Prerequistes
-OpenShift cluster on ARO is already created
-Install the OpenShift CLI on terminal 
-When your shell is ready and you are at the bash prompt, run the following commands:
-```
-wget https://rh-mobb.github.io/aro-hackathon-content/assets/cloudshell-setup.sh
+a. OpenShift cluster on ARO is already created
+b. Install the OpenShift CLI on terminal
+   You can [download and install](https://docs.openshift.com/container-platform/4.10/cli_reference/openshift_cli/getting-started-cli.html#installing-openshift-cli) the latest OpenShift CLI (oc)
+    Or, 
+   if you already have an OpenShift cluster you can access the command line tools page by clicking on the Question mark > Command Line Tools. Then download the relevant one for your operating system.
+! [OpenShift CLI](../aroworkshop/Images/Prereq-ocli.png)
+c. GitHub Account
+   You’ll need a personal GitHub account. You can sign up for free [here](https://github.com/). 
 
-bash ./cloudshell-setup.sh
+d. Download Azure command-line (CLI) documentation   
+   The Azure command-line interface (Azure CLI) is a set of commands used to create and manage Azure resources. You can downlaod it [here](https://learn.microsoft.com/en-us/cli/azure/)
 
-source .workshoprc
-```
-aa
+#### Why use oc over kubectl
+Being Kubernetes, one can definitely use kubectl with their OpenShift cluster. oc is specific to OpenShift in that it includes the standard set of features from kubectl plus additional support for OpenShift functionality. See [Usage of oc and kubectl](https://docs.openshift.com/container-platform/4.11/cli_reference/openshift_cli/usage-oc-kubectl.html) commands for more details
 
-### ARO credentials 
+#### ARO credentials 
 Credentials will be provided to you by the organizing staff on the day of the event.
-
-![Azure Portal Cloud Shell](../assets/images/overview-cloudshell-icon.png){ align=center }
