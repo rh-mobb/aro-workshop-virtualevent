@@ -25,3 +25,21 @@ Some of the things you’ll be going through:
 - Exposing the web application frontend using Routes
 - Creating CI/CD pipelines
 - Introduction to operators
+
+### Prerequistes
+OpenShift cluster on ARO is already created
+Install the OpenShift CLI on terminal 
+When your shell is ready and you are at the bash prompt, run the following commands:
+```
+wget https://rh-mobb.github.io/aro-hackathon-content/assets/cloudshell-setup.sh
+
+bash ./cloudshell-setup.sh
+
+source .workshoprc
+```
+
+
+### ARO credentials 
+Credentials will be provided to you by the organizing staff on the day of the event.
+
+![Azure Portal Cloud Shell](../assets/images/overview-cloudshell-icon.png){ align=center }
