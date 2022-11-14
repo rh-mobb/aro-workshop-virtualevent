@@ -108,7 +108,7 @@ You should see the following response:
 #### 6. View the app
 Copy `ostoy-route-ostoy.apps.my-rosa-cluster.g14t.p1.openshiftapps.com` above and paste it into your browser and press enter. You should see the homepage of our application. If the page does not come up make sure that it is using `http` and **not** `https`.
 
-![Home Page](/Images/ostoy-homepage.png)
+![Home Page](/Images/Lab2-ostoy-homepage.png)
 
 
 
