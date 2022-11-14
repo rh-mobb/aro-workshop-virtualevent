@@ -1,4 +1,4 @@
-Welcome to OpenShift!!
+**Welcome to Azure Red Hat OpenShift!!**
 
 This lab provides a quick tour of the console to help you get familiar with the user interface along with some key terminology we will use in subsequent lab content. If you are already familiar with the basics of OpenShift simply ensure you can login and create the project.
 
