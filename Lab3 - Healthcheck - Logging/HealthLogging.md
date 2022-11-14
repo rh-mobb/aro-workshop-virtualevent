@@ -4,7 +4,7 @@ In this section we will intentionally crash our pods, as well as make a pod non-
 #### 1. Prepare the desktop
 It would be best to prepare by splitting your screen between the OpenShift Web UI and the OSToy application so that you can see the results of our actions immediately.
 
-![Splitscreen](//Images/Lab3-ostoy-splitscreen.png)
+![Splitscreen](/Images/Lab3-ostoy-splitscreen.png)
 
 But if the screen is too small or that just won't work, then open the OSToy application in another tab so you can quickly switch to the OpenShift Web Console once you click the buttons in our app. To get to this deployment in the OpenShift Web Console go to make sure you've selected "ostoy" for the project and in the left menu go to:
 
