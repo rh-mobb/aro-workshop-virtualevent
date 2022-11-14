@@ -47,4 +47,3 @@ Being Kubernetes, one can definitely use kubectl with their OpenShift cluster. o
 ### ARO credentials 
 Credentials will be provided to you by the organizing staff on the day of the event.
 
-#### Contributors
