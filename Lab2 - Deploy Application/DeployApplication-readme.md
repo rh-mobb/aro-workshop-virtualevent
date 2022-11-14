@@ -13,7 +13,7 @@ AZR_PASSWORD=user1
 One way to deploy the application would be to have the images for the front-end and back-end microservice containers already created (via CI/CD) and stored in an image repository.  You can then create Kubernetes deployments (YAML) and use those to deploy the application.  We will do that now.
 
 #### 1. Retrieve the login command
-If you are not logged in via the CLI, [access your cluster via the web console](/Lab1%20-%20OpenShift%20Basics/OpenShiftBasics-readme.md), then click on the dropdown arrow next to your name in the top-right and select *Copy Login Command*.
+If you are not logged in via the CLI, [access your cluster via the web console](https://github.com/nedoshi/aroworkshop/blob/main/Lab1%20-%20OpenShift%20Basics/OpenShiftBasics-readme.md), then click on the dropdown arrow next to your name in the top-right and select *Copy Login Command*.
 
 ![CLI Login](/Images/Lab2-cli-login.png)
 
@@ -46,9 +46,9 @@ You should receive the following response
 
     to build a new example application in Ruby.
 
-Equivalently you can also create this new project using the [web console UI](/rosa/6-access_cluster/#accessing-the-cluster-via-the-web-console) by clicking on "Projects" under "Home" on the left menu, and then click "Create Project" button on the right.
+Equivalently you can also create this new project using the web console UI as shown in Lab1 by clicking on "Projects" under "Home" on the left menu, and then click "Create Project" button on the right.
 
-![UI Create Project](images/4-createnewproj.png)
+![UI Create Project](/Images/Lab1-CreateProject.png)
 
 <!---
 #### 3. Download the YAML configuration
