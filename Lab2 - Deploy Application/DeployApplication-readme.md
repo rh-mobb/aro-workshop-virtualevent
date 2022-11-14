@@ -66,11 +66,11 @@ The microservice serves internal web requests and returns a JSON object containi
 
 In your terminal deploy the microservice using the following command:
 
-    oc apply -f https://raw.githubusercontent.com/openshift-cs/rosaworkshop/master/rosa-workshop/ostoy/yaml/ostoy-microservice-deployment.yaml
+    oc apply -f https://raw.githubusercontent.com/nedoshi/aroworkshop/main/yaml/ostoy-microservice-deployment.yaml
 
 You should see the following response:
 
-    $ oc apply -f https://raw.githubusercontent.com/openshift-cs/rosaworkshop/master/rosa-workshop/ostoy/yaml/ostoy-microservice-deployment.yaml
+    $ oc apply -f https://raw.githubusercontent.com/nedoshi/aroworkshop/main/yaml/ostoy-microservice-deployment.yaml
     deployment.apps/ostoy-microservice created
     service/ostoy-microservice-svc created
 
@@ -88,11 +88,11 @@ The frontend deployment contains the node.js frontend for our application along 
 
 In your terminal, deploy the frontend along with creating all objects mentioned above by entering:
 
-    oc apply -f https://raw.githubusercontent.com/openshift-cs/rosaworkshop/master/rosa-workshop/ostoy/yaml/ostoy-fe-deployment.yaml
+    oc apply -f https://raw.githubusercontent.com/nedoshi/aroworkshop/main/yaml/ostoy-fe-deployment.yaml
 
 You should see all objects created successfully
 
-    $ oc apply -f https://raw.githubusercontent.com/openshift-cs/rosaworkshop/master/rosa-workshop/ostoy/yaml/ostoy-fe-deployment.yaml
+    $ oc apply -f https://raw.githubusercontent.com/nedoshi/aroworkshop/main/yaml/ostoy-fe-deployment.yaml
     persistentvolumeclaim/ostoy-pvc created
     deployment.apps/ostoy-frontend created
     service/ostoy-frontend-svc created
@@ -115,7 +115,7 @@ You should see the following response:
 #### 6. View the app
 Copy `ostoy-route-ostoy.apps.my-rosa-cluster.g14t.p1.openshiftapps.com` above and paste it into your browser and press enter. You should see the homepage of our application. If the page does not come up make sure that it is using `http` and **not** `https`.
 
-![Home Page](images/4-ostoy-homepage.png)
+![Home Page](/Images/ostoy-homepage.png)
 
 
 
