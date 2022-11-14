@@ -3,7 +3,7 @@ Welcome to OpenShift!!
 This lab provides a quick tour of the console to help you get familiar with the user interface along with some key terminology we will use in subsequent lab content. If you are already familiar with the basics of OpenShift simply ensure you can login and create the project.
 
 #### Estimate time
-Completing this tutorial should take about 20 minutes.
+Completing this tutorial should take about 15 minutes.
 
 #### Key Terms
 We will be using the following terms throughout the workshop labs so here are some basic definitions you should be familiar with. You'll learn more terms along the way, but these are the basics to get you started.
