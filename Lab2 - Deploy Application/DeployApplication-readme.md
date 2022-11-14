@@ -2,12 +2,6 @@ This tutorial walks you through getting your node.js application instance up on 
 
 After the successful deployment of an Azure Red Hat OpenShift cluster Developers, Engineers, DevOps and SRE can start to use it easily through the portal or through the oc CLI.
 
-#### Setup Environment variables
-```bash
-AZR_RESOURCE_GROUP=nddemo-rg
-AZR_CLUSTER=nddemo
-AZR_USER=user1
-AZR_PASSWORD=user1
 ```
 ## Deploy via a Kubernetes Deployment
 One way to deploy the application would be to have the images for the front-end and back-end microservice containers already created (via CI/CD) and stored in an image repository.  You can then create Kubernetes deployments (YAML) and use those to deploy the application.  We will do that now.
