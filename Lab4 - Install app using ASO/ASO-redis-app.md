@@ -12,7 +12,6 @@ ASO consists of:
 
 ![Azure-Service-operator](/Images/Lab4-aso-schematic.png)
 
-
 ## Azure Services Overview
 
 Applications running on ARO often use other Azure services like databases, caching, message queues or storage. Using ASO, these services can be managed directly inside the cluster. In this task we will deploy an Azure Cache for Redis database that can be used by an application running on OpenShift. Azure Cache for Redis is a fully managed, in-memory cache that enables high-performance and scalable architectures.
@@ -20,6 +19,9 @@ Applications running on ARO often use other Azure services like databases, cachi
 To proceed with this task you will need to have completed the **Deploy Azure Service Operator** (already provisioned).
 
 The Azure Voting App that will be deployed consists of a front end web-app that uses an Azure Cache for Redis instance to provide persistence of votes received for Cats and Dogs. The application interface has been built using Python / Flask.
+
+#### Estimate time
+Completing this tutorial should take about 30 minutes.
 
 ### Create a project to use for the application
 
@@ -110,7 +112,7 @@ redis-tjgf1lwg   True               Succeeded
 
 You can view the resource being created in the Azure Portal by searching for "Redis"
 
-![screenshot of azure portal showing redis](./Images/azr-portal-redis.png)
+![screenshot of azure portal showing redis](./Images/Lab4-azr-portal-redis.png)
 
 ### Deploy the Azure Voting App
 
