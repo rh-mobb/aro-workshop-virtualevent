@@ -20,10 +20,9 @@ This tutorial walks you through getting your first application instance up and r
 Some of the things you’ll be going through:
 
 - Creating a [project](https://docs.openshift.com/container-platform/4.11/applications/projects/working-with-projects.html) on the Azure Red Hat OpenShift Web Console
-- Deploying a dsatabase container for backend application
-- Deploying a frontend app from Git Hub using Source-To-Image (S2I)
+- Deploying a database container for backend application
+- Deploying a frontend app from Git Hub
 - Exposing the web application frontend using Routes
-- Creating CI/CD pipelines
 - Introduction to operators
 
 ### Prerequistes
