@@ -48,7 +48,7 @@ oc login "${OCP_API}" -u "${OCP_USER}" -p "${OCP_PASS}"
 ### Deploying first application via Web console
 a. Once you have logged into your clusters you should see the following 
 
-! [OpenShift Webconsole](../Images/Lab1-Webconsole.png)
+![OpenShift Webconsole](../Images/Lab1-Webconsole.png)
 
 There are 2 views administrator and developer view on left hand side. 
 
@@ -57,23 +57,21 @@ The Administrator perspective enables you to view the cluster inventory, capacit
 The Developer perspective offers several built-in ways to deploy applications, services, and databases
 
 b. Select the Administration and the click Projects on the left and then Click Create project 
-! [OpenShift Create Project](../Images/Lab1-CreateProject.png)
+![OpenShift Create Project](../Images/Lab1-CreateProject.png)
 
 c. Give the name of the project.
 Example:*user1-lab1*
 Project names are unique namespace.
-! [OpenShift Create Project Name](../Images/Lab1-CreateProject-name.png)
+![OpenShift Create Project Name](../Images/Lab1-CreateProject-name.png)
 
 d. Switch to developer view
-! [OpenShift Create Project Name](../Images/Lab1-DeveloperView.png)
+![OpenShift Create Project Name](../Images/Lab1-DeveloperView.png)
 
 e. Click the view all quickstart link 
-! [OpenShift QuickStart](../Images/Lab1-Quickstart.png)
+![OpenShift QuickStart](../Images/Lab1-Quickstart.png)
 
 f. You should see several tiles and click sample application and side window will openup. Click Start and follow the instructions
-! [OpenShift Sample Application](../Images/Lab1-SampleApplication.png)
-! [OpenShift Sample Application](../Images/Lab1-SampleApplication-start.png)
+![OpenShift Sample Application](../Images/Lab1-SampleApplication.png)
+![OpenShift Sample Application](../Images/Lab1-SampleApplication-start.png)
 
 g. Complete all this steps to finish this lab. At the end of it you should see a webbrowser with **"Hello from Node.js Starter Application!"**
-
-f. Start with 
