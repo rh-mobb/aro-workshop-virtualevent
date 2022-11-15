@@ -27,7 +27,9 @@ Copy the command under where it says "Log in with this token". Then go to your t
     oc new-project <projectname>
 
 #### 2. Create new project
-Create a new project called "ostoy" in your cluster by entering the following command:
+Create a new project called "ostoy" in your cluster by entering the following command: 
+
+Please use different project names ***example: user1-ostoy***
 
     oc new-project ostoy
 
@@ -42,8 +44,8 @@ You should receive the following response
 
     to build a new example application in Ruby.
 
-Equivalently you can also create this new project using the web console UI as shown in Lab1 by clicking on "Projects" under "Home" on the left menu, and then click "Create Project" button on the right. Please use different project names **ex: user1_ostoy
-**
+Equivalently you can also create this new project using the web console UI as shown in Lab1 by clicking on "Projects" under "Home" on the left menu, and then click "Create Project" button on the right. 
+
 ![UI Create Project](/Images/Lab1-CreateProject.png)
 
 <!---
