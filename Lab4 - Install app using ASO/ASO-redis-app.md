@@ -25,90 +25,18 @@ Completing this tutorial should take about 15 minutes.
 
 ### Create a project to use for the application
 
-OpenShift uses Projects to separate application resources on the cluster. Create a project for the Azure Voting App: Use a different project name
+OpenShift uses Projects to separate application resources on the cluster. Create a project for the Azure Voting App: Use a different project name **userx-redis-demo**
 
 ```bash
 oc new-project user1-redis-demo
 ```
 
-Allow the Redis App to run as any user:
+### Set Environment variables
+AZ_RG=aro_workshop_rg
 
-```bash
-oc adm policy add-scc-to-user anyuid -z user1-redis-demo
-```
+REDIS_PROJECT=user1-redis-demo
 
-Create an Azure Resource Group to hold project resources. Make sure the namespace matches the project name, and that the location is in the same region the cluster is:
-
-```bash
-cat <<EOF | oc apply -f -
-apiVersion: resources.azure.com/v1beta20200601
-kind: ResourceGroup
-metadata:
-  name: "${AZ_RG}"
-  namespace: user1-redis-demo
-  annotations:
-    serviceoperator.azure.com/reconcile-policy: skip
-spec:
-  location: eastus
-EOF
-```
-
-### Deploy an Azure Cache for Redis Instance
-
-The first step to deploying the application is to deploy the Redis cache. This also shows creating a random string as part of the hostname because the Azure DNS namespace is global, and a name like `sampleredis` is likely to be taken. Also make sure the location spec matches.
-
-```bash
-REDIS_HOSTNAME=redis-$(head -c24 < /dev/random | base64 | LC_CTYPE=C tr -dc 'a-z0-9' | cut -c -8)
-cat <<EOF | oc apply -f -
-apiVersion: cache.azure.com/v1beta20201201
-kind: Redis
-metadata:
-  name: "${REDIS_HOSTNAME}"
-  namespace: user1-redis-demo
-spec:
-  location: eastus
-  owner:
-    name: "${AZ_RG}"
-  sku:
-    family: C
-    name: Basic
-    capacity: 0
-  enableNonSslPort: true
-  redisConfiguration:
-    maxmemory-delta: "10"
-    maxmemory-policy: allkeys-lru
-  redisVersion: "6"
-  operatorSpec:
-    secrets:
-      primaryKey:
-        name: redis-secret
-        key: primaryKey
-      secondaryKey:
-        name: redis-secret
-        key: secondaryKey
-      hostName:
-        name: redis-secret
-        key: hostName
-      port:
-        name: redis-secret
-        key: port
-EOF
-```
-
-This will take a couple of minutes to complete as well. Also note that there is typically a bit of lag between a resource being created and showing up in the Azure Portal.
-
-You can watch the progress in the Cloud Shell by running
-
-```bash
-watch ~/bin/oc get redis
-```
-
-Eventually it will show
-
-```{.text .no-copy}
-NAME             READY   SEVERITY   REASON      MESSAGE
-redis-tjgf1lwg   True               Succeeded
-```
+REDIS_HOSTNAME=redis-wzlol9ei
 
 You can view the resource being created in the Azure Portal by searching for "Redis"
 
@@ -121,7 +49,7 @@ The Azure Voting App will be deployed from a pre-built container that is stored 
 The application is exposed internal to the cluster using a service on port 80, and is exposed externally using an OpenShift Route with TLS termination through a public facing Azure Load Balancer.
 
 ```bash
-cat <<EOF | oc -n user1-redis-demo apply -f -
+cat <<EOF | oc -n "${REDIS_PROJECT}" apply -f -
 apiVersion: apps/v1
 kind: Deployment
 metadata:
