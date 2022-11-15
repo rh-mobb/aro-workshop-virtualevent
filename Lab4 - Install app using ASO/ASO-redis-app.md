@@ -21,7 +21,7 @@ To proceed with this task you will need to have completed the **Deploy Azure Ser
 The Azure Voting App that will be deployed consists of a front end web-app that uses an Azure Cache for Redis instance to provide persistence of votes received for Cats and Dogs. The application interface has been built using Python / Flask.
 
 #### Estimate time
-Completing this tutorial should take about 30 minutes.
+Completing this tutorial should take about 15 minutes.
 
 ### Create a project to use for the application
 
