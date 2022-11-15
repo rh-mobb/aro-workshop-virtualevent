@@ -32,7 +32,6 @@ oc new-project user1-redis-demo
 ```
 
 ### Set Environment variables
-AZ_RG=aro_workshop_rg
 
 REDIS_PROJECT=user1-redis-demo
 
