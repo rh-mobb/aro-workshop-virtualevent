@@ -34,7 +34,7 @@ oc new-project user1-redis-demo
 Allow the Redis App to run as any user:
 
 ```bash
-oc adm policy add-scc-to-user anyuid -z redis-demo
+oc adm policy add-scc-to-user anyuid -z user1-redis-demo
 ```
 
 Create an Azure Resource Group to hold project resources. Make sure the namespace matches the project name, and that the location is in the same region the cluster is:
