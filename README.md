@@ -38,7 +38,7 @@ c. GitHub Account
    You’ll need a personal GitHub account. You can sign up for free [here](https://github.com/). 
 
 d. Download Azure command-line (CLI) documentation   
-   The Azure command-line interface (Azure CLI) is a set of commands used to create and manage Azure resources. You can downlaod it [here](https://learn.microsoft.com/en-us/cli/azure/)
+   The Azure command-line interface (Azure CLI) is a set of commands used to create and manage Azure resources. You can download it [here](https://learn.microsoft.com/en-us/cli/azure/)
 
 ### Why use oc over kubectl
 Being Kubernetes, one can definitely use kubectl with their OpenShift cluster. oc is specific to OpenShift in that it includes the standard set of features from kubectl plus additional support for OpenShift functionality. See [Usage of oc and kubectl](https://docs.openshift.com/container-platform/4.11/cli_reference/openshift_cli/usage-oc-kubectl.html) commands for more details
