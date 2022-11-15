@@ -70,7 +70,7 @@ d. Click the +Add on left pane and then click view all quickstart link
 
 ![OpenShift QuickStart](../Images/Lab1-Quickstart.png)
 
-e. You should see several tiles and click sample application and side window will openup. Click Start and follow the instructions
+e. You should see several tiles and click **Get started with sample application** and side window will openup. Click Start and follow the instructions
 
 ![OpenShift Sample Application](../Images/Lab1-SampleApplication.png)
 
