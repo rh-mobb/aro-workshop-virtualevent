@@ -25,10 +25,10 @@ Completing this tutorial should take about 15 minutes.
 
 ### Create a project to use for the application
 
-OpenShift uses Projects to separate application resources on the cluster. Create a project for the Azure Voting App:
+OpenShift uses Projects to separate application resources on the cluster. Create a project for the Azure Voting App: Use a different project name
 
 ```bash
-oc new-project redis-demo
+oc new-project user1-redis-demo
 ```
 
 Allow the Redis App to run as any user:
@@ -45,7 +45,7 @@ apiVersion: resources.azure.com/v1beta20200601
 kind: ResourceGroup
 metadata:
   name: "${AZ_RG}"
-  namespace: redis-demo
+  namespace: user1-redis-demo
   annotations:
     serviceoperator.azure.com/reconcile-policy: skip
 spec:
@@ -64,7 +64,7 @@ apiVersion: cache.azure.com/v1beta20201201
 kind: Redis
 metadata:
   name: "${REDIS_HOSTNAME}"
-  namespace: redis-demo
+  namespace: user1-redis-demo
 spec:
   location: eastus
   owner:
@@ -121,7 +121,7 @@ The Azure Voting App will be deployed from a pre-built container that is stored 
 The application is exposed internal to the cluster using a service on port 80, and is exposed externally using an OpenShift Route with TLS termination through a public facing Azure Load Balancer.
 
 ```bash
-cat <<EOF | oc -n redis-demo apply -f -
+cat <<EOF | oc -n user1-redis-demo apply -f -
 apiVersion: apps/v1
 kind: Deployment
 metadata:
