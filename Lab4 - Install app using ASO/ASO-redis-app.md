@@ -112,7 +112,7 @@ redis-tjgf1lwg   True               Succeeded
 
 You can view the resource being created in the Azure Portal by searching for "Redis"
 
-![screenshot of azure portal showing redis](./Images/Lab4-azr-portal-redis.png)
+![screenshot of azure portal showing redis](/Images/Lab4-azr-portal-redis.png)
 
 ### Deploy the Azure Voting App
 
