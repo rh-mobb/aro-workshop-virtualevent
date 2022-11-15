@@ -60,18 +60,22 @@ b. Select the Administration and the click Projects on the left and then Click C
 ![OpenShift Create Project](../Images/Lab1-CreateProject.png)
 
 c. Give the name of the project.
-Example:*user1-lab1*
+Example:**user1-lab1**
+
 Project names are unique namespace.
+
 ![OpenShift Create Project Name](../Images/Lab1-CreateProject-name.png)
 
-d. Switch to developer view
-![OpenShift Create Project Name](../Images/Lab1-DeveloperView.png)
+d. Click the +Add on left pane and then click view all quickstart link
 
-e. Click the view all quickstart link 
 ![OpenShift QuickStart](../Images/Lab1-Quickstart.png)
 
-f. You should see several tiles and click sample application and side window will openup. Click Start and follow the instructions
+e. You should see several tiles and click sample application and side window will openup. Click Start and follow the instructions
+
 ![OpenShift Sample Application](../Images/Lab1-SampleApplication.png)
+
 ![OpenShift Sample Application](../Images/Lab1-SampleApplication-start.png)
 
-g. Complete all this steps to finish this lab. At the end of it you should see a webbrowser with **"Hello from Node.js Starter Application!"**
+f. Complete all this steps to finish this lab. At the end of it you should see a webbrowser with **"Hello from Node.js Starter Application!"**
+
+![OpenShift Final](../Images/Lab1-Final.gif)
