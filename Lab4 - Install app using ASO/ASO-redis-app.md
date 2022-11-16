@@ -117,6 +117,28 @@ spec:
   wildcardPolicy: None
 EOF
 ```
+### Check to see if pods are running
+
+```bash
+oc get pods
+```
+You should see the following
+
+```
+$ oc get pods
+ NAME                                READY   STATUS                       RESTARTS   AGE
+azure-vote-front-69955487b4-zdbgc   0/1     CreateContainerConfigError   0          24s
+```
+
+The error is because it is looking for secrets to connect to Azure Cache for Redis. To fix this run the following command 
+
+```
+oc create secret generic redis-secret --from-literal=hostName=redis-wzlol9ei.redis.cache.windows.net \
+--from-literal=port=6379 \
+--from-literal=primaryKey=Skg0kOzNQlTW7KCdnvzsB9kO5PoPD2WpSAzCaPIaRxk= \
+--from-literal=secondaryKey=EK5EqB7AI8asZDUvf6CV4c1wILlpWRzofAzCaL5yCxw=
+```
+You should see that secret/redis-secret created
 
 ### Access the Application
 
