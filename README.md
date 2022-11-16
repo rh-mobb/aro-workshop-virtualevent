@@ -47,7 +47,7 @@ Being Kubernetes, one can definitely use kubectl with their OpenShift cluster. o
 Credentials will be provided to you by the organizing staff on the day of the event.
 
 ### Set Environment variables
-AZ_ARO=aro_workshop
+AZ_ARO=aroworkshop
  
-AZ_RG=aro_workshop_rg
+AZ_RG=aroworkshop_rg
 
