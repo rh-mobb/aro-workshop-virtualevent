@@ -7,8 +7,11 @@ Completing this tutorial should take about 30 minutes.
 
 ### Resources
 The source code for this app is available here: https://github.com/openshift-cs/ostoy
+
 OSToy front-end container image: https://quay.io/repository/ostoylab/ostoy-frontend?tab=tags
+
 OSToy microservice container image: https://quay.io/repository/ostoylab/ostoy-microservice?tab=tags
+
 Deployment Definition YAMLs:
 ostoy-fe-deployment.yaml
 ostoy-microservice-deployment.yaml
