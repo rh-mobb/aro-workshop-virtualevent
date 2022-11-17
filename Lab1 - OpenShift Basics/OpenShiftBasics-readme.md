@@ -22,7 +22,7 @@ We will be using the following terms throughout the workshop labs so here are so
 
 ### Accessing OpenShift
 
-To retrieve the console URL run:
+To retrieve the console URL run: (this will be provided at the start of the lab)
 
 ```bash
 az aro show --name "${AZ_ARO}" --resource-group \
