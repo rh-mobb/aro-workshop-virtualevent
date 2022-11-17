@@ -19,9 +19,9 @@ ostoy-microservice-deployment.yaml
 ### About OSToy
 OSToy is a simple Node.js application that we will deploy to Azure Red Hat OpenShift. It is used to help us explore the functionality of Kubernetes. This application has a user interface which you can:
 
-write messages to the log (stdout / stderr)
-intentionally crash the application to view self-healing
-toggle a liveness probe and monitor OpenShift behavior
+- write messages to the log (stdout / stderr)
+- intentionally crash the application to view self-healing
+- toggle a liveness probe and monitor OpenShift behavior
 
 ### Deploy via a Kubernetes Deployment
 One way to deploy the application would be to have the images for the front-end and back-end microservice containers already created (via CI/CD) and stored in an image repository.  You can then create Kubernetes deployments (YAML) and use those to deploy the application.  We will do that now.
