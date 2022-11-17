@@ -25,19 +25,19 @@ Completing this tutorial should take about 15 minutes.
 
 ### Create a project to use for the application
 
-OpenShift uses Projects to separate application resources on the cluster. Create a project for the Azure Voting App: Use a different project name **userx-redis-demo**
+OpenShift uses Projects to separate application resources on the cluster. Create a project for the Azure Voting App: Use a different project name **userid-redis-demo**
 
 ```bash
-oc new-project user1-redis-demo
+oc new-project <USERID>-redis-demo
 ```
 
 ### Set Environment variables
 
-REDIS_PROJECT=user1-redis-demo
+REDIS_PROJECT=<USERID>-redis-demo
 
 REDIS_HOSTNAME=redis-wzlol9ei
 
-You can view the resource being created in the Azure Portal by searching for "Redis"
+Azure cache for Redis resource on Azure Portal (already setup for the lab)
 
 ![screenshot of azure portal showing redis](/Images/Lab4-azr-portal-redis.png)
 
@@ -46,6 +46,8 @@ You can view the resource being created in the Azure Portal by searching for "Re
 The Azure Voting App will be deployed from a pre-built container that is stored in the public Microsoft Azure Container Registry. It's environment variables are configured to use the URL of the Redis cache deployed in the last step, and a Kubernetes Secret that was created as part of the cache deployment.
 
 The application is exposed internal to the cluster using a service on port 80, and is exposed externally using an OpenShift Route with TLS termination through a public facing Azure Load Balancer.
+
+**NOTE:**Deployment code with variable will fail, if environment variavle value is not setup for REDIS_PROJECT;
 
 ```bash
 cat <<EOF | oc -n "${REDIS_PROJECT}" apply -f -
@@ -143,7 +145,7 @@ You should see that secret/redis-secret created
 ### Access the Application
 
 ```bash
-oc get route azure-vote
+oc get route
 ```
 
 Browse to the URL provided by the previous command and validate that the app is working
