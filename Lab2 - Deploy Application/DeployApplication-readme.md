@@ -31,7 +31,7 @@ Create a new project called "ostoy" in your cluster by entering the following co
 
 Please use different project names ***example: user1-ostoy***
 
-    oc new-project ostoy
+    oc new-project <USERID>-ostoy
 
 You should receive the following response
 
